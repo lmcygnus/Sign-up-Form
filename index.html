@@ -4,15 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <div class="image">
-        <img src="max-andrey-TlRQin0iwjE-unsplash.jpg" alt="a desk and computer" width="31%">
-        <p class="odin"><img class="odinLogo" src="odin-lined.png" alt="odin logo" width="80em">ODIN</p>
+        <img class="desktop" src="max-andrey-TlRQin0iwjE-unsplash.jpg" alt="a desk and computer">
+        <p class="credit">Photo by <a href="https://unsplash.com/es/@maxandrey?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style="color: white;">Max Andrey</a> on <a href="https://unsplash.com/es/fotos/TlRQin0iwjE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" style="color: white;">Unsplash</a></p>
+        <div class="odin">
+            <p class="odinText"><img class="odinLogo" src="odin-lined.png" alt="odin logo" width="70rem">ODIN</p>
+        </div>
     </div>
     <div class="form">
-
+        <div class="text">
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            Sing up <i>now</i> to get started.</h2>
+                <h2>You <i>know</i> you want to.</h2>
+            </h3>
+        </div>
+        <form action="get">
+            <legend>Let's do this!</legend>
+            <div class="inputs">
+                <div class="inputdata">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="FirstName" id="firstName">
+                </div>
+                <div class="inputdata">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="LastName" id="lastName">
+                </div>
+                <div class="inputdata">
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email" id="email">
+                    <span></span>
+                </div>
+                <div class="inputdata">
+                    <label for="phoneNuber">Phone Number:</label>
+                    <input type="number" id="phoneNuber">
+                </div>
+                <div class="inputdata">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" minlength="8" required>
+                    <span></span>
+                </div>
+                <div class="inputdata">
+                    <label for="confPassword">Confirm Password:</label>
+                    <input type="password" id="confPassword" minlength="8" required>
+                    <span></span>
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit">Create Account</button>
+                <p class="LogIn">Already have an account? <a href=""style="color: #9b3c00">Log In</a></p>
+            </div>
+        </form>
     </div>
 </body>
-</html>
+</html> 

@@ -1,12 +1,122 @@
-img {
+@font-face {
+    font-family: "Norse Bold";
+    src: url("https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf");
+  }
+:root {
+    --color-: #9b3c00;
+}
+body, .odinText, .form, .text, .inputs, .inputdata, .submit {
+    display: flex;
+    flex-wrap: wrap;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.image, .odin {
+    overflow: hidden;
+}
+.desktop {
     position: relative;
+    width: 31vw;
+    min-width: 460px;
 }
 .odin {
     position: absolute;
-    top: 1em;
+    top: 20vh;
     background-color: rgba(0, 0, 0, 0.437);
     color: white;
-    width: 31%;
-    text-align: center;
-    font-size: 80px;
+    width: 31vw;
+    min-width: 460px;
+}
+.odinText {
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: 'Norse Bold';
+    margin: 1%;
+}
+.credit {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    font-size: 1rem;
+}
+.form {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+.text {
+    width: 50vw;
+    flex-direction: column;
+    margin: 5% 15%;
+}
+legend {
+    margin: 0% 10% 5%;
+    font-weight: bolder;
+}
+.inputs{
+    margin: 0% 10%;
+    justify-content:space-between;
+    width: 40vw;
+}
+.inputdata {
+    flex-direction: column;
+}
+label {
+    font-size: 0.8rem;
+}
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 0% 0% 5%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input:focus{
+    border: 2px solid gray;
+    outline: none;
+    border-radius: 4px;
+}
+input:invalid:focus{
+    outline: none;
+    border-bottom: 1px solid red;
+}
+input[type=email]:invalid:focus + span:after {
+    content:"Please check your email";
+    color: red;
+    font-size: 0.8rem;
+}
+input[type=password]:invalid:focus + span:after{
+    content:"password must be at least 8 characters";
+    color: red;
+    font-size: 0.8rem;
+  }
+button {
+    border-radius: 10px;
+    border: 3px solid var(--color-);
+    background-color: var(--color-);
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    max-height: 50px;
+    min-width: 170px;
+}
+button:hover {
+    background-color: white;
+    color: var(--color-);
+    border: 3px solid var(--color-);
+}
+.submit {
+    margin: 5% 10% 0%;
+    width: 45vw;
+    gap: 2vw;
 }
